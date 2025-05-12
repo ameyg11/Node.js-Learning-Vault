@@ -21,5 +21,6 @@ calcMultiply(3,4);
 
 const data = require('./data.json')
 console.log(data)
+console.log(data.age);
 
 calcMultiply(data.age,2)
