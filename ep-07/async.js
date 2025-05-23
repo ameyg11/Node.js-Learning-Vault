@@ -12,6 +12,12 @@ var b = 1236;
 //     }
 // )
 
+const crypto = require("crypto")
+
+crypto.pbkdf2('password' , 'salt', 5000, 50, 'sha512', (err, key) => {
+    console.log("password is generated", err,key);
+})
+
 https.get("https://dummyjson.com/products", (res) => {
     let data = "";
 
